@@ -10,6 +10,19 @@ POC for No-Code Platform
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Running the demo
+
+To start the front end: `npm start`. 
+ - You may need to install react-scripts first: `npm i react-scripts`
+
+To start the back end: navigate to `backend` directory and run `python3 main.py`
+ - You will need to update `main.py` with the correct `host`, `port`, and `auth`
+ - You may need a VPN connection for your endpoint
+ - You may need to `pip3 install` the following:
+   - `flask`
+   - `asgiref` (needed for flask async)
+   - `flask_cors`
+
 ## Available Scripts
 
 In the project directory, you can run:
