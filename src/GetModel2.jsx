@@ -1,12 +1,12 @@
 import React from 'react';
 
-class SearchModel extends React.Component {
+class GetModel2 extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             input: null,
-            index: null
+            modelId: null
         };
     }
 
@@ -19,19 +19,19 @@ class SearchModel extends React.Component {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         };
-        fetch('http://127.0.0.1:5000/search/'+this.state.input, requestOptions)
+        fetch('http://127.0.0.1:5000/model/'+this.state.input, requestOptions)
             .then(response => response.json())
-            .then(data => this.setState({ index: data.hits.hits }));
+            .then(data => this.setState({ modelId: data.model_id }));
     }
 
     render() {
-        const { index } = this.state;
+        const { modelId } = this.state;
         
         return (
             <div className="card text-center m-3" style={{marginBottom: "30%"}}>
-                Query the Vector DB!
+                Query this task ID until task is complete.
                 <br />
-                <br />                
+                <br />
                 <input
                     type="text"
                     // value={this.state.value}
@@ -39,19 +39,15 @@ class SearchModel extends React.Component {
                 />
                 <input
                     type="button"
-                    value="Get Vectors"
+                    value="Get Model Id"
                     style={{marginLeft: "10%"}}
                     onClick={this.handleClick.bind(this)}
                 />
-                <p>name vectors:
-                {index && index.map((value) => (
-                    <li>{value._source.name}: <small>{value._source.name_v}</small></li>
-                    ))}
-                </p>
+                <p>Model Id: {modelId}</p>
 
             </div>
         );
     }
 }
 
-export { SearchModel }; 
+export { GetModel2 }; 

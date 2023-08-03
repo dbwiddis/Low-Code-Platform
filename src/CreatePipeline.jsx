@@ -28,6 +28,9 @@ class CreatePipeline extends React.Component {
         
         return (
             <div className="card text-center m-3" style={{marginBottom: "25%"}}>
+                Use this model ID to configure neural search with search pipelines
+                <br />
+                <br />
                 <input
                     type="text"
                     // value={this.state.value}

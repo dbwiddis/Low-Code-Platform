@@ -42,14 +42,12 @@ class UploadModel extends React.Component {
         const { taskId } = this.state;
         return (
             <div style={{marginBottom: "25%"}}>
-                <label>
-                    Select a model to upload:
-                    <select name="selectedModel">
+                Select a model to upload:
+                <select name="selectedModel">
                     <option value="a-model">A model</option>
                     <option value="paraphrase">paraphrase-multilingual-MiniLM-L12-v2</option>
                     <option value="another-model">Another model</option>
-                    </select>
-                </label>
+                </select>
                 <input
                     type="button"
                     value="Upload Model"
