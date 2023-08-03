@@ -28,7 +28,7 @@ function App() {
       <div className="center">
         {/* <input type="button" className='button' value="Upload Model" onClick={()=>{setisrendered(true)}} />
     {isrendered&&<UploadModel/>} */}
-       <UploadModel/>
+        <UploadModel/>
         <GetModel />
         <LoadModel />
         <CreatePipeline />
