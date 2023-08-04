@@ -29,6 +29,9 @@ class GetModel extends React.Component {
         
         return (
             <div className="card text-center m-3" style={{marginBottom: "30%"}}>
+                Query this task ID until task is complete.
+                <br />
+                <br />
                 <input
                     type="text"
                     // value={this.state.value}

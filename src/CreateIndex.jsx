@@ -28,6 +28,9 @@ class CreateIndex extends React.Component {
         
         return (
             <div className="card text-center m-3" style={{marginBottom: "25%"}}>
+                Create an index to store vector DB
+                <br />
+                <br />
                 <input
                     type="text"
                     // value={this.state.value}

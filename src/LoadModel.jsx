@@ -30,6 +30,9 @@ class LoadModel extends React.Component {
         
         return (
             <div className="card text-center m-3" style={{marginBottom: "30%"}}>
+                Load the model by ID
+                <br />
+                <br />
                 <input
                     type="text"
                     // value={this.state.value}

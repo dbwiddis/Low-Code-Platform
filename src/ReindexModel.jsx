@@ -29,6 +29,9 @@ class ReindexModel extends React.Component {
         
         return (
             <div className="card text-center m-3" style={{marginBottom: "30%"}}>
+                Convert "solarsystem" index to vector DB
+                <br />
+                <br />
                 <input
                     type="text"
                     // value={this.state.value}
